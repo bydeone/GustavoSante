@@ -34,67 +34,56 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/orange" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
-                app:cardElevation="3dp"
-                app:cardCornerRadius="3dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
 
-                <RelativeLayout
-                    android:padding="5dp"
-                    android:background="@color/vert"
+            <RelativeLayout
+                android:padding="5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/vert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/orng"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+
+
+                <LinearLayout
+                    android:layout_toEndOf="@+id/ivAvatar"
+                    android:layout_centerVertical="true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/ivAvatar"
-                        android:layout_width="96dp"
-                        android:layout_height="96dp"
-                        android:src="@drawable/orng"
-                        app:civ_border_width="2dp"
-                        app:civ_border_color="#FF000000"/>
+                    <TextView
+                        android:id="@+id/tvNoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Patrick NKOA"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
 
+                    <TextView
+                        android:id="@+id/tvTelephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="+237 6 77 81 40 03"/>
 
-                    <LinearLayout
-                        android:layout_toEndOf="@+id/ivAvatar"
-                        android:layout_centerVertical="true"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/tvNoms"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:text="Patrick NKOA"
-                            android:textColor="@color/white"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/tvTelephone"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textColor="@color/white"
-                            android:textStyle="bold"
-                            android:text="+237 6 77 81 40 03"/>
-
-                    </LinearLayout>
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
+            </RelativeLayout>
 
         </RelativeLayout>
 
@@ -135,6 +124,7 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvPatients"
+                tools:listitem="@layout/item_patient"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 

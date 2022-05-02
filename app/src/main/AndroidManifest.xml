@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GustavoSante">
         <activity
+            android:name=".patient.ShowPatientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".patient.AddPatientActivity"
+            android:exported="false" />
+        <activity
             android:name=".connexion.ForgetActivity"
             android:exported="false" />
         <activity
