@@ -6,4 +6,9 @@
     <string name="mot_de_passe_oubli">Mot de passe oublié</string>
     <string name="cr_er_un_compte">Créer un compte</string>
     <string name="connexion">CONNEXION</string>
+    <string name="login_error">Erreur de login</string>
+    <string name="pwd_error">Erreur de mot de passe</string>
+    <string name="pd_conn_user">Patientez pendant le processus de connexion à l\'application</string>
+    <string name="sign_in_ok">Bienvenue sur %s</string>
+    <string name="sign_in_error">Erreur lors de la connexion de l\'utilisateur</string>
 </resources>
