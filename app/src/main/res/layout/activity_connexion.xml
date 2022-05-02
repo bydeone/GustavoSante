@@ -9,6 +9,7 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ivAppAvatar"
+        android:layout_alignParentTop="true"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
@@ -24,29 +25,22 @@
 
         <EditText
             android:id="@+id/edtvLogin"
-            android:padding="20dp"
-            android:hint="@string/votre_adresse_mail"
-            android:background="@color/white"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:inputType="textEmailAddress"
-            android:drawableEnd="@drawable/ic_action_login"
-            android:layout_marginBottom="20dp"
+            style="@style/xEditext"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_action_login"
+            android:hint="@string/votre_adresse_mail"
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/edtvMotdepasse"
-            android:padding="20dp"
-            android:layout_below="@+id/edtvLogin"
-            android:hint="@string/votre_mot_de_passe"
-            android:background="@color/white"
-            android:inputType="textPassword"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:drawableEnd="@drawable/ic_action_lock"
+            style="@style/xEditext"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtvLogin"
+            android:drawableEnd="@drawable/ic_action_lock"
+            android:hint="@string/votre_mot_de_passe"
+            android:inputType="textPassword" />
 
         <TextView
             android:id="@+id/tvMotDePasseOublie"

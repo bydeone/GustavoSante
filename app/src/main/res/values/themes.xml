@@ -13,4 +13,13 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="xEditext">
+        <item name="android:background">@drawable/editext_field</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:textColorHint">@color/vert</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>

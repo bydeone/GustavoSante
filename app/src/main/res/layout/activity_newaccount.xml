@@ -1,9 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/orange"
     tools:context=".connexion.NewaccountActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivAppAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/orange" />
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_below="@+id/ivAppAvatar"
+        android:layout_above="@+id/tvSignature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtvNom"
+            style="@style/xEditext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_action_add_person"
+            android:hint="@string/votre_nom_complet"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edtvTelephone"
+            android:layout_below="@+id/edtvNom"
+            style="@style/xEditext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_action_phone"
+            android:hint="@string/votre_t_l_phone"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/edtvLogin"
+            android:layout_below="@+id/edtvTelephone"
+            style="@style/xEditext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_action_login"
+            android:hint="@string/votre_adresse_mail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edtvMotdepasse"
+            style="@style/xEditext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtvLogin"
+            android:drawableEnd="@drawable/ic_action_lock"
+            android:hint="@string/votre_mot_de_passe"
+            android:inputType="textPassword" />
+
+
+        <EditText
+            android:id="@+id/edtvConfMotdepasse"
+            style="@style/xEditext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtvMotdepasse"
+            android:drawableEnd="@drawable/ic_action_lock"
+            android:hint="@string/confirmer_votre_mot_de_passe"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/btCreateAccount"
+            android:layout_below="@+id/edtvConfMotdepasse"
+            android:text="@string/creer_votre_compte"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSignature"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/deone_studio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -10,4 +10,5 @@
     <!--custom color-->
     <color name="orange">#FF3E00</color>
     <color name="vert">#296E01</color>
+    <color name="field_editext">#E8F65E</color>
 </resources>

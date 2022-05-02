@@ -11,4 +11,25 @@
     <string name="pd_conn_user">Patientez pendant le processus de connexion à l\'application</string>
     <string name="sign_in_ok">Bienvenue sur %s</string>
     <string name="sign_in_error">Erreur lors de la connexion de l\'utilisateur</string>
+    <string name="creer_votre_compte">CREER VOTRE COMPTE</string>
+    <string name="confirmer_votre_mot_de_passe">Confirmer votre mot de passe</string>
+    <string name="votre_t_l_phone">Votre téléphone</string>
+    <string name="votre_nom_complet">Votre nom complet</string>
+    <string name="confirm_error">Vos mots de passe ne correspondent pas</string>
+    <string name="phone_error">Erreur de saisie du téléphone</string>
+    <string name="nom_error">Erreur de saisie de votre nom</string>
+    <string name="no_user">L\'utilisateur n\'existe pas</string>
+    <string name="create_account_error">Erreur lors de la création de votre compte</string>
+    <string name="pd_create_user">Création de votre compte d\'utilisation</string>
+    <string name="newacc_message">Voulez vous quitter cette page</string>
+    <string name="newacc_titre">Quitter la page</string>
+    <string name="camera">CAMERA</string>
+    <string name="gallery">GALLERIE</string>
+    <string name="selectionner_une_image">Séllection d\'une image</string>
+    <string name="enable_storage_permissions">Activer la permission de stockage</string>
+    <string name="enable_camera_storage_permissions">Activer le stockga des images prise avec la camera</string>
+    <string name="pd_save_user">Enrregistrement des informations de l\'utilisateur</string>
+    <string name="save_user_info_ok">Sauvegarde réussie</string>
+    <string name="save_image_ok">Sauvegarde de l\'image réussie</string>
+    <string name="add_image_message">Ajout d\'une nouvelle image</string>
 </resources>

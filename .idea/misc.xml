@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/editext_field.xml" value="0.1015" />
         <entry key="app/src/main/res/layout/activity_connexion.xml" value="0.2625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2625" />
+        <entry key="app/src/main/res/layout/activity_newaccount.xml" value="0.2625" />
         <entry key="app/src/main/res/layout/item_patient.xml" value="0.2625" />
       </map>
     </option>
