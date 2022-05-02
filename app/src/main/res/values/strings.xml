@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Gustavo Sante</string>
+    <string name="votre_adresse_mail">Votre adresse mail</string>
+    <string name="votre_mot_de_passe">Votre mot de passe</string>
+    <string name="deone_studio">Deone Studio</string>
+    <string name="mot_de_passe_oubli">Mot de passe oublié</string>
+    <string name="cr_er_un_compte">Créer un compte</string>
+    <string name="connexion">CONNEXION</string>
 </resources>
